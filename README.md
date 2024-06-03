@@ -3,5 +3,5 @@
 TODO
 
 <p align="center">
-<img src="img/MER-MORGAN_approach_scaled.png" width="400" height="236">
+<img src="img/MER-MORGAN_approach_scaled.png" width="600" height="620">
 </p>
