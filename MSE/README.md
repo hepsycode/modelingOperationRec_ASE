@@ -1,5 +1,5 @@
 # HEPSYCODE-AIDOaRt
-HEPSYCODE Modeling Methodology, Framework and tools for AIDOaRt European Project
+HEPSYCODE Modeling Methodology, Framework and tools for ASE submission
 
 <p align="center">
 <img src="img/logo.png" width="400" height="236">
