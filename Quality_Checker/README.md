@@ -47,3 +47,14 @@ Diversity measures the difference between a chunk of text and another in the gen
 <p align="center">
 <img src="formulas/COSINE.png">
 </p>
+
+These metrics can be used to evaluate how well LLMs can emulate both the designer's modeling approach and patterns, as well as human-based modeling approaches.
+
+## Hallucination Metric
+
+In the scope of the paper, we define the hallucination as the number of additional operations, namely non-realistic events, generated compared to the human ones by specifying the following metric:
+<p align="center">
+<img src="formulas/H.png">
+</p>
+This metric can be evaluated on the full synthetic trace file and real trace file and also for all the considered DSL metamodel classes. If these metrics are greater than 1, then the LLM produces an incorrect synthetic trace file (i.e., hallucination results, the LLM adds more classes than those present in the real trace model).
+
