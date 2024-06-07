@@ -1,4 +1,4 @@
-# HEPSYCODE-AIDOaRt
+# HEPSYCODE
 HEPSYCODE Modeling Methodology, Framework and tools for ASE submission
 
 <p align="center">
