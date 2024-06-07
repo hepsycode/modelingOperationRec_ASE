@@ -29,7 +29,8 @@ Diversity measures the difference between a chunk of text and another in the gen
 <img src="formulas/jaro.png">
 </p>
     where m is the number of matching characters between real traces and synthetic traces and t is half the number of transpositions.
-2. Token-based similarities focus on comparing strings based on their constituent tokens or words, rather than individual characters. 
+    
+1. Token-based similarities focus on comparing strings based on their constituent tokens or words, rather than individual characters. 
     - Jaccard: measure the size of the intersection divided by the size of the union of the strings, as follows:
 <p align="center">
 <img src="formulas/Jaccard.png">
