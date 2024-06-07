@@ -35,3 +35,15 @@ Diversity measures the difference between a chunk of text and another in the gen
 <p align="center">
 <img src="formulas/Jaccard.png">
 </p>
+    - Sorensen-Dice: evaluate twice the number of elements common to both traces divided by the sum of the number of elements in each trace, as follows:
+<p align="center">
+<img src="formulas/DICE.png">
+</p>
+    - Q-Gram: count the number of occurrences of different q-grams in the two traces. The Q-gram similarity is described as follows:
+<p align="center">
+<img src="formulas/Q-GRAM.png">
+</p>
+    - Cosine: similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them, as follows:
+<p align="center">
+<img src="formulas/COSINE.png">
+</p>
