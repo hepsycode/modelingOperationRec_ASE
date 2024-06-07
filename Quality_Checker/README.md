@@ -1,6 +1,6 @@
 # Quality Checker Component
 
-To evaluate synthetic data generated through LLMs, we developed python code to collect quantitative metric related to  diversity, correctness, and hallucination, as defined as follow. 
+To evaluate synthetic data generated through LLMs, we developed python code to collect quantitative metric related to  diversity, correctness, and hallucination, as defined as follows. 
 
 ## Correctness Metric
 
@@ -17,3 +17,7 @@ Diversity measures the difference between a chunk of text and another in the gen
 
 1. Edit-based similarities, also known as distance-based, measure the minimum number of single-character operations (e.g., insertions, deletions, or substitutions) required to transform one string into another. 
     - Levenshtein: Given two traces, the Levenshtein distance between them is the minimum number of single-character edits (insertions, deletions, or substitutions) required to change one trace into the other. Starting from the Levenshtein distance, the Levenshtein similarity is defined as follows:
+
+[![\\ \begin{equation}\label{eq:eq2} \\ \text{LEV}(\tau_{j},\tau^{+}_{j}) = 1.0 - \frac{dist(\tau_{j},\tau^{+}_{j})}{max(|\tau_{j}|,|\tau^{+}_{j}|)} \\ \end{equation} \\  \\ ](https://latex.codecogs.com/svg.latex?%5C%5C%20%5Cbegin%7Bequation%7D%5Clabel%7Beq%3Aeq2%7D%20%5C%5C%20%5Ctext%7BLEV%7D(%5Ctau_%7Bj%7D%2C%5Ctau%5E%7B%2B%7D_%7Bj%7D)%20%3D%201.0%20-%20%5Cfrac%7Bdist(%5Ctau_%7Bj%7D%2C%5Ctau%5E%7B%2B%7D_%7Bj%7D)%7D%7Bmax(%7C%5Ctau_%7Bj%7D%7C%2C%7C%5Ctau%5E%7B%2B%7D_%7Bj%7D%7C)%7D%20%5C%5C%20%5Cend%7Bequation%7D%20%5C%5C%20%20%5C%5C%20)](#_)
+
+    - TODO
