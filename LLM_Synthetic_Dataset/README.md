@@ -6,4 +6,4 @@ In such a context, our work used four LLMs as instances of the proposed LLM comp
 
 GPT-4, GPT-3.5, and Gemini are proprietary, meaning their underlying details and weights are not shared publicly. They are generally accessed via paid APIs or cloud services. LLama3 is an open-source model, offering transparency and flexibility with its publicly available architecture and weights. We selected these LLMs because they represent the best proprietary and open-source technologies according to LMSYS LeaderBoard.
 
-This folder contains the dataset generated with the LLMs listed above.
+The folder D2 folder contains the dataset generated with the LLMs listed above. Prompt schemas are added in word files.
