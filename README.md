@@ -8,7 +8,7 @@ This repository presents our proposed approach and the corresponding replication
 
 The repository is organized as follows:
 
-1. **MSE** folder contains HEPSYCODE Graphical Modeling Workbench and the Modeling Event Recorder process.mining;
+1. **MSE** folder contains HEPSYCODE Graphical Modeling Workbench and the Modeling Event Recorder;
 2. **Trace Parser** folder contains the code and results of parsing the process.mining tracing results;
 3. **LLM Synthetic Dataset** folder contains the prompt schemas used and the results of the queries made to the considered LLMs;
 4. **Quality Checker** folder contains the Python code for extracting metrics of correctness, diversity, and hallucination, with corresponding Jamovi projects for statistical analyses in the Wresults_RQ1 folder;
