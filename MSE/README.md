@@ -84,7 +84,7 @@ MER (Modeling Event Recorder) is an Eclipse plugin that captures and serializes 
 - Clone the repository to your local machine.
 - Import the project into Eclipse as an existing Eclipse plugin project.
 - Run the project as an Eclipse application.
-- Create an HEPSYCODE modeling project.
+- Create a HEPSYCODE modeling project.
 - Open the Sirius graphical editor.
 - Perform modeling actions and interactions in the Sirius graphical editor.
 - Right-click on the modeling project in the project explorer and close the project.
