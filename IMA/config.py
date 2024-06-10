@@ -1,6 +1,6 @@
 # local path
-XES_TRAIN_SRC = "XES-MORGAN-LLM-GPT4/"
-#XES_TRAIN_SRC = "XES-MORGAN-LLM-GPT4/"
+XES_TRAIN_SRC = "Dataset_D2/"
+
 
 XES_TEST_SRC = "XES_original_test/"
 

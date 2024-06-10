@@ -405,6 +405,9 @@ def creates_train_file(directory_path, output_file_path):
 
 
 def create_cross_validation_folders(source_folder,dest_folder, n_folds):
+
+    create_path_if_not_exists(source_folder)
+    create_path_if_not_exists(dest_folder)
     # Check if the source folder exists
     if not os.path.isdir(source_folder):
         raise ValueError("Source folder does not exist.")
@@ -629,102 +632,11 @@ def csv_to_latex(filepath, output_filepath):
     with open(output_filepath, 'w') as f:
         f.write(latex_str)
 
-def plot_graphs():
-    # Updated data
-    data = {
-        'Approach': ['gpt4', 'gpt4', 'gpt4', 'mixed', 'mixed', 'mixed', 'manual', 'manual', 'manual'],
-        'Metric': ['Avg Precision', 'Avg Recall', 'Avg F1', 'Avg Precision', 'Avg Recall', 'Avg F1', 'Avg Precision',
-                   'Avg Recall', 'Avg F1'],
-        'Value': [0.34,0.22,0.24,0.44,0.25,0.29,0.70,0.47,0.50]
-    }
-
-    # Create DataFrame
-    df = pd.DataFrame(data)
-
-    # Pivot the DataFrame to make it suitable for plotting
-    df_pivot = df.pivot(index='Approach', columns='Metric', values='Value')
-
-    # Reorder the columns
-    df_pivot = df_pivot[['Avg Precision', 'Avg Recall', 'Avg F1']]
-
-    # Reorder the index
-    df_pivot = df_pivot.loc[['gpt4', 'mixed', 'manual']]
-
-    # Colors for the bars
-    colors = {
-        'gpt4': '#FFA07A',  # Light Salmon
-        'mixed': '#FF8C00',  # Dark Orange
-        'manual': '#FF4500'  # Orange Red
-    }
-
-    # Plotting
-    ax = df_pivot.plot(kind='bar', figsize=(10, 6), color=[colors['gpt4'], colors['mixed'], colors['manual']])
-    #plt.title('Class recommendations on D4')
-    plt.xlabel('Training set')
-    plt.ylabel('Value')
-    plt.xticks(rotation=0)
-    plt.legend(title='Metric')
-    plt.tight_layout()
-
-    # Display the plot
-    plt.show()
 
 
 
 
 
-def plot_lines():
-    # Updated data
-    data = {
-        'Approach': ['gpt4', 'mixed02', 'mixed05', 'mixed08', 'manual'],
-        'Avg Precision': [40.0, 38.0, 48.0, 56.0, 74.0],
-        'Avg Recall': [50.04545454545455, 47.015151515151516, 48.934731934731936, 60.382284382284375, 62.96861471861472],
-        'Avg F1': [42.920634920634924, 39.86813186813187, 47.21513269339356, 56.5901710798736, 66.51964506082153]
-    }
-
-    # Create DataFrame
-    df = pd.DataFrame(data)
-
-    df['Avg Precision'] = df['Avg Precision'] / 100
-
-    df['Avg Recall'] = df['Avg Recall'] / 100
-    df['Avg F1'] = df['Avg F1'] / 100
-
-
-    # Colors for the lines
-    colors = {
-        'gpt4': '#FFA07A',  # Light Salmon
-        'manual': '#FF4500',  # Orange Red
-        'mixed02': '#32CD32',  # Lime Green
-        'mixed05': '#1E90FF',  # Dodger Blue
-        'mixed08': '#8A2BE2'  # Blue Violet
-    }
-
-    # Line styles for the lines
-    line_styles = {
-        'gpt4': 'o--',
-        'manual': 'o--',
-        'mixed02': 'o--',
-        'mixed05': 'o--',
-        'mixed08': 'o--'
-    }
-
-    # Plotting
-    fig, ax = plt.subplots(figsize=(10, 6))
-
-    for approach in df['Approach']:
-        ax.plot(['Avg Precision', 'Avg Recall', 'Avg F1'],
-                df[df['Approach'] == approach].iloc[0][1:],
-                line_styles[approach], color=colors.get(approach, '#000000'), label=approach)
-
-    plt.xlabel('Metric')
-    plt.ylabel('Value')
-    plt.legend(title='Training set')
-    plt.grid(True)
-    plt.tight_layout()
-
-    # Display the plot
-    plt.show()
 
 # Call the function to plot the graph
 
@@ -734,51 +646,6 @@ def plot_lines():
 
 
 
-def plot_graphs_class():
-    # Updated data
-    data = {
-        'Approach': ['gpt4', 'gpt4', 'gpt4', 'mixed', 'mixed', 'mixed', 'manual', 'manual', 'manual'],
-        'Metric': ['Avg Precision', 'Avg Recall', 'Avg F1', 'Avg Precision', 'Avg Recall', 'Avg F1', 'Avg Precision',
-                   'Avg Recall', 'Avg F1'],
-        'Value': [40.0, 50.04545454545455, 42.920634920634924,48.0,48.934731934731936,47.21513269339356,
-                  74.0, 62.96861471861472, 66.51964506082153]
-    }
-
-    # Create DataFrame
-    df = pd.DataFrame(data)
-
-    # Divide values by 100
-    df['Value'] = df['Value'] / 100
-
-    # Pivot the DataFrame to make it suitable for plotting
-    df_pivot = df.pivot(index='Approach', columns='Metric', values='Value')
-
-    # Reorder the columns
-    df_pivot = df_pivot[['Avg Precision', 'Avg Recall', 'Avg F1']]
-
-    # Reorder the index
-    df_pivot = df_pivot.loc[['gpt4', 'mixed', 'manual']]
-
-    # Colors for the bars
-    colors = {
-        'gpt4': '#ADD8E6',  # Light Blue
-        'mixed': '#4682B4',  # Steel Blue
-        'manual': '#0000FF'  # Blue
-    }
-
-    # Plotting
-    ax = df_pivot.plot(kind='bar', figsize=(10, 6), color=[colors['gpt4'], colors['mixed'], colors['manual']])
-    plt.title('Comparison of Metrics by Approach')
-    plt.xlabel('Approach')
-    plt.ylabel('Value')
-    plt.xticks(rotation=0)
-    plt.legend(title='Metric')
-    plt.tight_layout()
-
-    # Display the plot
-    plt.show()
-
-#rename_files('results_class_five_fold_mixed/')
 
 
-plot_lines()
+
