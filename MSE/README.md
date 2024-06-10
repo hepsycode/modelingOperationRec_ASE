@@ -1,6 +1,6 @@
 # Modeling System Environment (MSE)
 
-This work validated the proposed approach on an MSE based on Eclipse and Sirius plugins: the HEPSYCODE project. To collect the traces we use Modeling Events Recorder (MER), an Eclipse plugin that interacts with Sirius-based graphical editors for EMF-based models and records users’ modeling event logs.
+This work validated the proposed approach on an MSE based on Eclipse and Sirius plugins called HEPSYCODE. To collect the traces we use Modeling Events Recorder (MER), an Eclipse plugin that interacts with Sirius-based graphical editors for EMF-based models and records users’ modeling event logs.
 
 ---
 
