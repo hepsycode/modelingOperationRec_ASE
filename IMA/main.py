@@ -1,4 +1,4 @@
-from GNN_engine import get_recommendations, eval_recommendations_time
+from rec_engine import get_recommendations, eval_recommendations_time
 import os
 import dataset_utilities as du
 

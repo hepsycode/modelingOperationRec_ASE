@@ -1,5 +1,5 @@
 # local path
-XES_TRAIN_SRC = "Dataset_D2/"
+XES_TRAIN_SRC = "Datasets/Dataset_D2/"
 
 
 XES_TEST_SRC = "XES_original_test/"
