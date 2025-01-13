@@ -18,10 +18,10 @@ The repository is organized as follows:
 Latest Release: 1.0.0
  
 ### LICENSE
-GNU GENERAL PUBLIC LICENSE Version 2, June 1991 (see https://www.gnu.org/licenses/gpl-3.0.en.html)
+GNU GENERAL PUBLIC LICENSE Version 2, June 1991 (see [https://www.gnu.org/licenses/gpl-2.0.en.html](https://gnu.org/licenses/old-licenses/gpl-2.0.html))
  
 ### DEVELOPER RESOURCES
-Source Repositories: [[https://github.com/hepsycode/SLIDE-x](https://github.com/hepsycode/SLIDE-x](https://github.com/hepsycode/modelingOperationRec_ASE))
+Source Repositories: [https://github.com/hepsycode/modelingOperationRec_ASE](https://github.com/hepsycode/modelingOperationRec_ASE)
 
 - Clone: 
     - ssh: [git@github.com:hepsycode/modelingOperationRec_ASE.git](git@github.com:hepsycode/modelingOperationRec_ASE.git)
