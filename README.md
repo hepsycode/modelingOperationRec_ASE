@@ -53,19 +53,19 @@ Research publications are available at https://hepsycode.github.io/
 If you use our work in your research, please cite: 
 ```
 @inproceedings{10.1145/3691620.3695058,
-author = {Muttillo, Vittoriano and Di Sipio, Claudio and Rubei, Riccardo and Berardinelli, Luca and Dehghani, MohammadHadi},
-title = {Towards Synthetic Trace Generation of Modeling Operations using In-Context Learning Approach},
-year = {2024},
-isbn = {9798400712487},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3691620.3695058},
-doi = {10.1145/3691620.3695058},
-booktitle = {Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
-pages = {619–630},
-numpages = {12},
-location = {Sacramento, CA, USA},
-series = {ASE '24}
+    author = {Muttillo, Vittoriano and Di Sipio, Claudio and Rubei, Riccardo and Berardinelli, Luca and Dehghani, MohammadHadi},
+    title = {Towards Synthetic Trace Generation of Modeling Operations using In-Context Learning Approach},
+    year = {2024},
+    isbn = {9798400712487},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3691620.3695058},
+    doi = {10.1145/3691620.3695058},
+    booktitle = {Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
+    pages = {619–630},
+    numpages = {12},
+    location = {Sacramento, CA, USA},
+    series = {ASE '24}
 }
 ```
 
