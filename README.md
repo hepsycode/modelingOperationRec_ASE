@@ -25,7 +25,7 @@ Source Repositories: [[https://github.com/hepsycode/SLIDE-x](https://github.com/
 
 - Clone: 
     - ssh: [git@github.com:hepsycode/modelingOperationRec_ASE.git](git@github.com:hepsycode/modelingOperationRec_ASE.git)
-    - https:[[https://github.com/hepsycode/SLIDE-x.git](https://github.com/hepsycode/modelingOperationRec_ASE.git)
+    - https: [https://github.com/hepsycode/SLIDE-x.git](https://github.com/hepsycode/modelingOperationRec_ASE.git)
  
 You can use the code from these repositories to experiment, test, build, and create patches, and issue pull requests (only by request).
 For any bug or doubt, contact us or open an issue.
